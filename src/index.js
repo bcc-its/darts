@@ -85,10 +85,10 @@ function setState(state) {
 playBtn.addEventListener("click", startPlay);
 playBtn.addEventListener("touchstart", startPlay);
 function startPlay(e) {
-  Darts.startBoardMovement();
   if (Arrows < 1) {
     return false;
   }
+  Darts.startBoardMovement();
   setState(STATE_PLAYING_THROW_START);
   e.preventDefault();
   e.stopPropagation();
