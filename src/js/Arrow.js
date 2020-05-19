@@ -82,7 +82,7 @@ export default function Arrow(settings) {
     } else if (this.targetIsSet && this.target.isAHit) {
       this.nextX = wave(
         this.BoardX + this.target.offsetX,
-        SETTINGS.BOARD_AMPLITUDE_X,
+        SETTINGS.BOARD_AMPLITUDE_X * innerWidth,
         SETTINGS.BOARD_PERIOD_X,
         this.time
       );
