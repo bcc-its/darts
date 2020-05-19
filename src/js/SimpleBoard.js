@@ -35,7 +35,12 @@ export default function RealBoard(settings) {
   this.getX = () =>
     !this.isMoving
       ? this.X
-      : utils.wave(this.X, this.amplitudeX, this.periodX, this.time);
+      : utils.wave(
+          this.X,
+          this.amplitudeX * innerWidth,
+          this.periodX,
+          this.time
+        );
 
   this.getY = () => this.Y;
 
