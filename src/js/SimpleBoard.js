@@ -122,7 +122,7 @@ export default function RealBoard(settings) {
     const font = "25px mr-eaves-modern";
     const textColor = `rgba(255,255,255,${opacityText})`;
     const bgColor = `rgba(${
-      this.target.score === 10 ? COLOR_RED : COLOR_BLUE
+      this.target.score === SETTINGS.BOARD_RINGS ? COLOR_RED : COLOR_BLUE
     },${opacityBg})`;
 
     this.drawCircle(ctx, x, y, 20, bgColor, 20);
